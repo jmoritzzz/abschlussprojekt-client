@@ -1,0 +1,294 @@
+.App {
+  border: 5px solid red;
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(8px + 2vmin);
+  color: #c0c0c0;
+  font-family: 'Della Respira', serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.hr2 {
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(255, 255, 255), rgba(0, 0, 0, 0));
+  width: 70%;
+}
+
+.home-container {
+  border: 5px solid gold;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: calc(12px + 2vmin);
+}
+
+.skyline {
+  /* opacity: 0.3; */
+  width: 50%;
+  border: #000;
+}
+
+
+nav {
+  border: 5px solid green;
+  margin: 1% 2%;
+  width: 100%;
+  text-align: center;
+}
+
+.navbar-link {
+  list-style: none;
+  text-decoration: none;
+  padding: 0 2%;
+  color: #353535;
+}
+
+.navbar-link:link {
+  color: #353535;
+  text-decoration: none;
+}
+
+.navbar-link:visited {
+  color: #74767e;
+}
+
+.navbar-link:hover {
+  color: #c0c0c0;
+  text-decoration: underline;
+}
+
+/* .navbar-link:active {
+  color: #800000;
+} */
+
+/* .display-content {
+  border: 3px solid greenyellow;
+  margin: 2%;
+
+} */
+
+.Container {
+  border: 5px solid turquoise;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  color: #bebebe;
+  font-size: 1rem;
+  font-weight: 100;
+  /* margin: 3%; */
+}
+
+.Episode {
+  background-color: #282c34;
+  display: grid;
+  grid-template-columns: 30% 30% 20% 20%;
+  border: 1px solid #bebebe;
+  border-radius: 15px;
+  /* overflow: hidden; */
+  margin: 3%;
+
+  text-align: left;
+  padding: 1%;
+  height: fit-content;
+  line-height: 1.5rem;
+  font-size: 1rem;
+  text-transform: none;
+}
+
+.Avatar {
+  height: 300px;
+  margin: 10px 0;
+}
+
+.episode-title {
+  /* border: 3px solid green; */
+  color: #bebebe;
+  /* margin: 10px; */
+  /* padding: 10px 0; */
+  
+}
+
+.ShortSummary {
+  padding: 10px 0;
+
+}
+
+/* .Avatar:hover > .ShortSummary {
+  display: block;
+} */
+
+.GuestAppearance {
+  padding: 10px 0;
+}
+
+/* .ShortSummaryWrapper > .ShortSummary {
+  display: none;
+}
+.ShortSummaryWrapper:hover > .ShortSummary {
+  display: block;
+} */
+
+/* .GuestCallerWrapper > .GuestCaller {
+  display: none;
+}
+.GuestCallerWrapper:hover > .GuestCaller {
+  display: block;
+} */
+
+.GuestCaller {
+  padding: 10px 0;
+}
+
+.GuestCallerWrapper,
+.GuestAppearanceWrapper,
+.ShortSummaryWrapper,
+.title-wrapper {
+  padding: 5%;
+
+}
+
+
+.season-card {
+  /* border: 5px solid red; */
+
+  display: flex;
+  flex-wrap: wrap;
+  /* margin: 1%;   */
+  justify-content: center;
+}
+
+.season-card-item {
+  /* border: 5px solid rebeccapurple; */
+  /* height: fit-content; */
+  flex-basis: 10%;
+  /* margin: 1rem;  */
+  /* overflow: hidden; */
+  text-align: center;
+  padding: 1%;
+}
+
+.season-card-number {
+  /* border: 5px solid greenyellow; */
+  padding: 1% 0;
+  opacity: 0;
+}
+
+.season-card-item:hover .season-card-number {
+  opacity: 1.0;
+}
+
+.season-picture {
+  /* margin: 0 auto; */
+  border: 5px solid #353535;
+  height: 150px;
+
+}
+
+.season-picture:hover {
+  border: 5px solid #c0c0c0;
+}
+
+.episode-card {
+  /* border: 5px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1%;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.episode-card-item {
+  /* border: 5px solid yellow; */
+  flex-basis: 10%;
+  margin: 1rem;
+
+}
+
+.episode-card-title,
+.episode-card-number {
+  padding: 1% 0;
+  font-size: 1rem;
+}
+
+/*  */
+
+/* .episode-card-item:hover  .episode-card-number {
+  opacity: 1.0;
+} */
+
+.episode-picture {
+  margin: 0 auto;
+  border: 5px solid #353535;
+  height: 150px;
+  /* padding: 10px 0; */
+}
+
+.episode-picture:hover {
+  border: 5px solid #c0c0c0;
+}
+
+
+.quote-container {
+  /* border: 3px solid lightcoral; */
+  margin: 0 auto;
+  /* max-width: 80%; */
+  width: 1000px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card-layout {
+  /* border: 5px solid red; */
+
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 1%;
+
+  justify-content: center;
+  /*   
+  margin-left: -0.25rem;
+  margin-right: -0.25rem; */
+
+}
+
+.card-layout__item {
+  /* border: 5px solid greenyellow; */
+
+  height: fit-content;
+  flex-basis: 20%;
+
+  margin: 1%;
+
+  /* padding-left: 0.25rem;
+  padding-right: 0.25rem; */
+}
+
+img {
+  border: 2px solid #bebebe;
+
+}
