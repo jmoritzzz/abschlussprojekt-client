@@ -1,7 +1,6 @@
 import React from 'react'
 import { NavLink, Route, Routes } from 'react-router-dom';
 import './App.css';
-
 import Home from './home';
 import Seasons from './components/Seasons';
 import Quotes from './components/Quotes';
@@ -34,10 +33,6 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/seasons" element={< Seasons />} />
           <Route path="/quotes" element={< Quotes />} />
-          {/* <Route path="/seasons/:id" element={<Season/>} /> */}
-          {/* <Route path="/seasons/:id/episodes" element={<Episodes />} /> */}
-          {/* <Route path="/seasons/:id/episodes/:eid" element={<EpisodeCard />} /> */}
-
         </Routes>
       </div>
 

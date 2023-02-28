@@ -6,7 +6,7 @@ export default function App() {
     useEffect(() => {
         async function fetchData() {
             try {
-                const seasonsResponse = await fetch('http://localhost:5000/seasons');
+                const seasonsResponse = await fetch('https://abschlussprojekt-server.onrender.com/seasons');
                 const seasonsData = await seasonsResponse.json();
                 setSeasons(seasonsData);
 
@@ -18,7 +18,7 @@ export default function App() {
         fetchData();
     }, []);
 
-
+    return seasons;
 }
 
 

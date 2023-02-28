@@ -172,7 +172,7 @@ nav {
 
 
 .season-card {
-  /* border: 5px solid red; */
+  border: 5px solid yellow;
 
   display: flex;
   flex-wrap: wrap;
