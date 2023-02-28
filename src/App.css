@@ -5,11 +5,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: calc(8px + 2vmin);
+  font-size: calc(10px + 1vmin);
   color: #c0c0c0;
   font-family: 'Della Respira', serif;
   text-transform: uppercase;
   letter-spacing: 2px;
+  text-align: center;
 }
 
 .hr2 {
@@ -21,37 +22,29 @@
 
 .home-container {
   border: 5px solid gold;
-  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  text-align: center;
-  letter-spacing: 2px;
-  font-size: calc(12px + 2vmin);
+  align-items: center;
+  margin: 0 auto;
+  /* letter-spacing: 2px;
+  font-size: calc(10px + 2vmin); */
 }
-
-.skyline {
-  /* opacity: 0.3; */
-  width: 50%;
-  border: #000;
-}
-
 
 nav {
   border: 5px solid green;
-  margin: 1% 2%;
+  margin: 0.5% 2%;
   width: 100%;
   text-align: center;
 }
 
 .navbar-link {
+  border: 5px solid blue;
   list-style: none;
   text-decoration: none;
   padding: 0 2%;
-  color: #353535;
-}
-
-.navbar-link:link {
-  color: #353535;
-  text-decoration: none;
+  color: #74767e;
 }
 
 .navbar-link:visited {
@@ -63,15 +56,39 @@ nav {
   text-decoration: underline;
 }
 
+/* .navbar-link:hover ~ .navbar-link,
+.navbar-link:hover + .navbar-link {
+  color: #000;
+} */
+
 /* .navbar-link:active {
   color: #800000;
 } */
 
-/* .display-content {
-  border: 3px solid greenyellow;
-  margin: 2%;
+.skyline {
+  /* opacity: 0.3; */
+  /* width: 50%; */
+  width: 40vw;
+  height: auto;
+  border: #000;
+  border: 5px solid palevioletred;
+}
 
-} */
+.quote-container {
+  border: 3px solid lightcoral;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 100%;
+  width: 1000px;
+}
+
+
+
+
+
+
+/* /////////////////////////// */
+
 
 .Container {
   border: 5px solid turquoise;
@@ -111,7 +128,7 @@ nav {
   color: #bebebe;
   /* margin: 10px; */
   /* padding: 10px 0; */
-  
+
 }
 
 .ShortSummary {
@@ -234,12 +251,6 @@ nav {
 }
 
 
-.quote-container {
-  /* border: 3px solid lightcoral; */
-  margin: 0 auto;
-  /* max-width: 80%; */
-  width: 1000px;
-}
 
 
 

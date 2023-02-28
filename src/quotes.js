@@ -7,20 +7,13 @@ export default function Quotes() {
 
     const [quote, setquote] = useState(initialState)
     let quotes = [
-
-        // {
-        //     "quote": "Niles, I would shave my head for you. A gesture which becomes less significant with each passing year."
-        // },
         {
-            "quote": "Oh, Das ist ein Dekorationstil. Er wird eklektisch genannt."
+            "quote": "Oh, Das ist ein Dekorationsstil. Er wird eklektisch genannt."
         },
         {
             "quote": "Bin ich richtig gekleidet für eine Sache, die sich Bananarama nennt"
         },
-        {
-            // "quote": "You think I'm pretentious? You'd eat a worm if I gave it a French name!"
-        },
-        {
+         {
             "quote": "Ich bin es. Ich bin so high wie die Himalayas! Wäre ich eine Stadt in Deutschland, ich wäre High-delberg!"
         },
     ]
