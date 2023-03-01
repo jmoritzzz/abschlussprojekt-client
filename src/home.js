@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import background from './skyline_frasier.svg';
-// import Quotes from './quotes';
+import Quotes from './components/Quotes';
 
 export default function Home() {
     return (
@@ -12,8 +12,8 @@ export default function Home() {
                     </NavLink>
                 </nav>
                 <p className='quote-text'>
-                    {/* <Quotes /> */}
-                    Die Zitate sind jetzt ausgelagert und müssen erst gefetcht werden.
+                    <Quotes />
+                    
                 </p>
                 {/* <p>"Oh, Das ist ein Dekorationstil. Er wird eklektisch genannt."</p> */}
             </div>
