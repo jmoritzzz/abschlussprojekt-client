@@ -11,6 +11,7 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   text-align: center;
+  padding-top: 1%;
 }
 
 .hr2 {
@@ -37,6 +38,7 @@ nav {
   margin: 0.5% 2%;
   width: 100%;
   text-align: center;
+  padding-bottom: 0.5%;
 }
 
 .navbar-link {
@@ -57,18 +59,7 @@ nav {
   border-top: 1px solid #c0c0c0; */
 }
 
-/* .navbar-link:hover ~ .navbar-link,
-.navbar-link:hover + .navbar-link {
-  color: #000;
-} */
-
-/* .navbar-link:active {
-  color: #800000;
-} */
-
 .skyline {
-  /* opacity: 0.3; */
-  /* width: 50%; */
   width: 40vw;
   height: auto;
   border: #000;
@@ -81,6 +72,64 @@ nav {
   text-align: center;
   max-width: 100%;
   width: 1000px;
+  line-height: 1.5;
+}
+
+.season-card {
+  /* border: 5px solid yellow; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.season-card-item {
+  /* border: 5px solid rebeccapurple; */
+  flex-basis: 10%;
+  text-align: center;
+  padding: 1%;
+}
+
+/* .season-card-number {
+  border: 5px solid greenyellow;
+  padding: 1% 0;
+  opacity: 0;
+} */
+
+/* .season-card-item:hover .season-card-number {
+  opacity: 1.0;
+} */
+
+.season-picture {
+  border: 5px solid #353535;
+  height: calc(150px + 1vmin);
+
+}
+
+.season-picture:hover {
+  border: 5px solid #c0c0c0;
+}
+
+
+.allquotes-container {
+  /* border: 3px solid lightcoral; */
+  margin: 0 auto;
+  text-align: left;
+  max-width: 100%;
+  width: calc(900px + 1vmin);
+  font-size: calc(10px + 1vmin);
+  /* line-height: 1.5; */
+}
+
+.allquotes-item {
+  border: 1px solid #353535;
+  margin: 2% 0;
+  padding: 0 1%;
+
+}
+
+.allquotes-season {
+  /* border: 3px solid greenyellow; */
+ color: #74767e;
 }
 
 
@@ -97,7 +146,7 @@ nav {
   flex-wrap: wrap;
   /* justify-content: center; */
   color: #bebebe;
-  font-size: 1rem;
+  /* font-size: 1rem; */
   font-weight: 100;
   /* margin: 3%; */
 }
@@ -172,45 +221,7 @@ nav {
 }
 
 
-.season-card {
-  border: 5px solid yellow;
 
-  display: flex;
-  flex-wrap: wrap;
-  /* margin: 1%;   */
-  justify-content: center;
-}
-
-.season-card-item {
-  /* border: 5px solid rebeccapurple; */
-  /* height: fit-content; */
-  flex-basis: 10%;
-  /* margin: 1rem;  */
-  /* overflow: hidden; */
-  text-align: center;
-  padding: 1%;
-}
-
-.season-card-number {
-  /* border: 5px solid greenyellow; */
-  padding: 1% 0;
-  opacity: 0;
-}
-
-.season-card-item:hover .season-card-number {
-  opacity: 1.0;
-}
-
-.season-picture {
-  /* margin: 0 auto; */
-  border: 5px solid #353535;
-  height: 150px;
-
-}
-
-.season-picture:hover {
-  border: 5px solid #c0c0c0;
-}
 
 .episode-card {
   /* border: 5px solid red; */
@@ -218,7 +229,7 @@ nav {
   flex-wrap: wrap;
   margin: 1%;
   justify-content: center;
-  font-size: 1rem;
+  /* font-size: 1rem; */
 }
 
 .episode-card-item {

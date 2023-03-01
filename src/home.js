@@ -8,13 +8,16 @@ export default function Home() {
             <div className='home-container'>
                 <nav>
                     <NavLink className="image-link" to="/Seasons">
-                <img className='skyline' src={background} alt="Skyline" />
+                        <img className='skyline' src={background} alt="Skyline" />
                     </NavLink>
                 </nav>
-                <p className='quote-text'>
-                    <Quotes />
-                    
-                </p>
+                <div className='quote-container'>
+
+                    <p className='quote-text'>
+                        <Quotes />
+
+                    </p>
+                </div>
                 {/* <p>"Oh, Das ist ein Dekorationstil. Er wird eklektisch genannt."</p> */}
             </div>
         </>

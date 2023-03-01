@@ -14,9 +14,9 @@ export default function Seasons() {
             {seasons.length &&
                 seasons.map((season) => (
                     <div key={season._id} className="season-card-item">
-                        <h2>{season.seasonTitle}</h2>
                         {/* <p>Staffel Nummer: {season.seasonNumber}</p> */}
                         <img className="season-picture" src={season.seasonImage} alt={season.seasonTitle} />
+                        <p>{season.seasonTitle}</p>
                     </div>
                 ))}
         </div>
