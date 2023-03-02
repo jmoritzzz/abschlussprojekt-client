@@ -8,7 +8,7 @@ export default function EpisodeCard() {
   console.log(eid);
   console.log(allEpisodes);
 
-  const thisEpisode = allEpisodes.length && allEpisodes.find(episode => episode.episodeNumber === eid);
+  const thisEpisode = allEpisodes.length && allEpisodes.find(episode => episode.episodeNumber == eid);
 
   console.log('thisEpisode', thisEpisode)
 
@@ -21,7 +21,7 @@ export default function EpisodeCard() {
               <div className="episode-title">
                 {thisEpisode && thisEpisode.seasonNumber}.{thisEpisode && thisEpisode.episodeNumber}. {thisEpisode && thisEpisode.name}
               </div>
-              <img className="Avatar" src={thisEpisode && thisEpisode.episodeImage.file.url} />
+              <img className="Avatar" src={thisEpisode && thisEpisode.episodeImage} />
             </div>
             <div className="ShortSummaryWrapper"><u>Kurzbeschreibung</u>:
               <div className="ShortSummary">
@@ -29,14 +29,14 @@ export default function EpisodeCard() {
               </div>
             </div>
             <div className="GuestAppearanceWrapper"><u>Gastauftritt:</u>
-              <div className="GuestAppearance">
+               <div className="GuestAppearance">
                 {thisEpisode && thisEpisode.actors}
-              </div>
+               </div>
             </div>
 
             <div className="GuestCallerWrapper"><u>Gastanrufer:</u>
               <div className="GuestCaller">
-                {thisEpisode && thisEpisode.callers}
+                 {thisEpisode && thisEpisode.callers}
               </div>
             </div>
           </div>

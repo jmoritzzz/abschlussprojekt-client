@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react"
 import EpisodeCard from "./EpisodeCard";
 
+
 export default function Episodes({ seasonNumber }) {
     const [episodes, setEpisodes] = useState([]);
 
     const getAllEntries = async () => {
         try {
-            const response = await fetch('https://abschlussprojekt-server.onrender.com/seasons');
+            const response = await fetch('https://abschlussprojekt-server.onrender.com/episodes');
             const data = await response.json();
             setEpisodes(data.records);
         } catch (error) {
@@ -17,6 +18,8 @@ export default function Episodes({ seasonNumber }) {
     useEffect(() => {
         getAllEntries();
     }, []);
+
+    // console.log('episodes', episodes)
 
     const filteredEpisodes = episodes.filter(episode => episode.seasonNumber === seasonNumber);
     filteredEpisodes.sort((a, b) => a.episodeNumber - b.episodeNumber);

@@ -8,31 +8,33 @@ export default function Season() {
     const allSeasons = useSeasons()
     const allEpisodes = useEpisodes();
 
-    console.log(allSeasons);
+    console.log('all seasons',allSeasons);
     console.log('all episodes', allEpisodes);
 
     const { id } = useParams();
 
-    const thisSeason = allSeasons.length && allSeasons.find(season => season.seasonNumber === id);
+    //1. aktuelle Season 
+     const thisSeason = allSeasons.length && allSeasons.find(season => season.seasonNumber == id);
+     console.log('this season',thisSeason)
 
     //array mit allen Episoden dieser Staffel
     //find() funktioniert hier nicht, weil es uns nur das erste Match ausgibt und wir ein Array returnen wollen
-    const thisSeasonsEpisodes = allEpisodes.length && allEpisodes.filter(episode => episode.seasonNumber === id);
+    const thisSeasonsEpisodes = allEpisodes.length && allEpisodes.filter(episode => episode.seasonNumber == id);
 
     console.log('this season', thisSeason)
-    console.log('these episodes', thisSeasonsEpisodes);
+    console.log('this seasons episodes', thisSeasonsEpisodes);
 
     if (thisSeason) {
         return (
             <>
                 <div className="season-card">
-                    {thisSeasonsEpisodes.length &&
+                    {thisSeasonsEpisodes && thisSeasonsEpisodes.length &&
                         thisSeasonsEpisodes.map(
                             (season, index) => {
 
                                 return <div key={index} className="episode-card-item">
                                     <NavLink className="link" to={`/seasons/${season.seasonNumber}/episodes/${season.episodeNumber}`}>
-                                        <img className="episode-picture" src={season.episodePicture.file.url} />
+                                        <img className="episode-picture" src={season.episodeImage} />
                                     </NavLink>
                                     <div className="episode-card-number">{season.episodeNumber} - {season.name}</div>
                                     {/* <div className="episode-card-title"> {season.name}</div> */}
