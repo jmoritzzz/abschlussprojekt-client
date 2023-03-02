@@ -4,6 +4,11 @@ import './App.css';
 import Home from './home';
 import Seasons from './components/Seasons';
 import Quotes from './components/Quotes';
+import Season from './components/Season';
+import Episodes from './components/Episodes';
+import EpisodeCard from './components/EpisodeCard';
+import AllQuotes from './components/AllQuotes';
+
 
 
 function App() {
@@ -17,10 +22,10 @@ function App() {
         <NavLink className="navbar-link" to="/seasons">
           Staffelübersicht
         </NavLink>
-        <NavLink className="navbar-link" to="/nervosa">
+        {/* <NavLink className="navbar-link" to="/nervosa">
           Café Nervosa
-        </NavLink>
-        <NavLink className="navbar-link" to="/quotes">
+        </NavLink> */}
+        <NavLink className="navbar-link" to="/allquotes">
           Zitate
         </NavLink>
         <NavLink className="navbar-link" to="/titelkarten">
@@ -32,7 +37,11 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/seasons" element={< Seasons />} />
+          <Route path="/seasons/:id" element={<Season/>} />
+          <Route path="/seasons/:id/episodes" element={<Episodes />} />
+          <Route path="/seasons/:id/episodes/:eid" element={<EpisodeCard />} />
           <Route path="/quotes" element={< Quotes />} />
+          <Route path="/allquotes" element={< AllQuotes />} />
         </Routes>
       </div>
 

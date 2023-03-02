@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export default function App() {
+export default function useSeasons() {
     const [seasons, setSeasons] = useState([]);
 
     useEffect(() => {
@@ -18,7 +18,8 @@ export default function App() {
         fetchData();
     }, []);
 
-    return seasons;
+    // return seasons;
+        return seasons.sort((a, b) => a.seasonNumber - b.seasonNumber);
 }
 
 

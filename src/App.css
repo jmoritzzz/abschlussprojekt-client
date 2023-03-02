@@ -1,5 +1,5 @@
 .App {
-  border: 5px solid red;
+  /* border: 5px solid red; */
   background-color: black;
   min-height: 100vh;
   display: flex;
@@ -11,6 +11,7 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   text-align: center;
+  padding-top: 1%;
 }
 
 .hr2 {
@@ -21,7 +22,7 @@
 }
 
 .home-container {
-  border: 5px solid gold;
+  /* border: 5px solid gold; */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -33,14 +34,15 @@
 }
 
 nav {
-  border: 5px solid green;
+  /* border: 5px solid green; */
   margin: 0.5% 2%;
   width: 100%;
   text-align: center;
+  padding-bottom: 0.5%;
 }
 
 .navbar-link {
-  border: 5px solid blue;
+  /* border: 5px solid blue; */
   list-style: none;
   text-decoration: none;
   padding: 0 2%;
@@ -53,33 +55,85 @@ nav {
 
 .navbar-link:hover {
   color: #c0c0c0;
-  text-decoration: underline;
+  /* border-left: 1px solid #c0c0c0;
+  border-top: 1px solid #c0c0c0; */
 }
 
-/* .navbar-link:hover ~ .navbar-link,
-.navbar-link:hover + .navbar-link {
-  color: #000;
-} */
-
-/* .navbar-link:active {
-  color: #800000;
-} */
-
 .skyline {
-  /* opacity: 0.3; */
-  /* width: 50%; */
   width: 40vw;
   height: auto;
   border: #000;
-  border: 5px solid palevioletred;
+  /* border: 5px solid palevioletred; */
 }
 
 .quote-container {
-  border: 3px solid lightcoral;
+  /* border: 3px solid lightcoral; */
   margin: 0 auto;
   text-align: center;
   max-width: 100%;
-  width: 1000px;
+  width: calc(900px + 1vmin);
+  line-height: 1.5;
+}
+
+.season-card {
+  /* border: 5px solid yellow; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.season-card-item {
+  /* border: 5px solid rebeccapurple; */
+  flex-basis: 10%;
+  text-align: center;
+  padding: 1%;
+}
+
+/* .season-card-number {
+  border: 5px solid greenyellow;
+  padding: 1% 0;
+  opacity: 0;
+} */
+
+/* .season-card-item:hover .season-card-number {
+  opacity: 1.0;
+} */
+
+.season-picture {
+  border: 5px solid #353535;
+  height: calc(150px + 1vmin);
+
+}
+
+.season-picture:hover {
+  border: 5px solid #c0c0c0;
+}
+
+
+.allquotes-container {
+  /* border: 3px solid lightcoral; */
+  margin: 0 auto;
+  text-align: left;
+  max-width: 100%;
+  width: calc(900px + 1vmin);
+  font-size: calc(10px + 1vmin);
+  /* line-height: 1.5; */
+}
+
+
+.allquotes-item {
+  border: 1px solid #896443;
+  /* border: 1px solid #7b5434; */
+  /* border: 1px solid #6c4425; */
+  margin: 2% 0;
+  padding: 0 1%;
+  color: #c0c0c0;
+  text-transform: none;
+  }
+
+.allquotes-season {
+  /* border: 3px solid greenyellow; */
+ color: #74767e;
 }
 
 
@@ -96,7 +150,7 @@ nav {
   flex-wrap: wrap;
   /* justify-content: center; */
   color: #bebebe;
-  font-size: 1rem;
+  /* font-size: 1rem; */
   font-weight: 100;
   /* margin: 3%; */
 }
@@ -171,45 +225,7 @@ nav {
 }
 
 
-.season-card {
-  border: 5px solid yellow;
 
-  display: flex;
-  flex-wrap: wrap;
-  /* margin: 1%;   */
-  justify-content: center;
-}
-
-.season-card-item {
-  /* border: 5px solid rebeccapurple; */
-  /* height: fit-content; */
-  flex-basis: 10%;
-  /* margin: 1rem;  */
-  /* overflow: hidden; */
-  text-align: center;
-  padding: 1%;
-}
-
-.season-card-number {
-  /* border: 5px solid greenyellow; */
-  padding: 1% 0;
-  opacity: 0;
-}
-
-.season-card-item:hover .season-card-number {
-  opacity: 1.0;
-}
-
-.season-picture {
-  /* margin: 0 auto; */
-  border: 5px solid #353535;
-  height: 150px;
-
-}
-
-.season-picture:hover {
-  border: 5px solid #c0c0c0;
-}
 
 .episode-card {
   /* border: 5px solid red; */
@@ -217,7 +233,7 @@ nav {
   flex-wrap: wrap;
   margin: 1%;
   justify-content: center;
-  font-size: 1rem;
+  /* font-size: 1rem; */
 }
 
 .episode-card-item {
