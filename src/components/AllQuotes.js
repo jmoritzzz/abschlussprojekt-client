@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 import useQuotes from "../services/useQuotes";
 
 
@@ -21,8 +21,8 @@ export default function AllQuotes() {
             {allQuotes.length &&
                 allQuotes.map((allquote) => (
                     <div key={allquote._id} className="allquotes-item">
-                        <p>{allquote.figure}: {allquote.quote} </p>
-                        {allquote.reply ? <p>{allquote.interlocutor}: {allquote.reply}</p> : null}
+                        <p>{allquote.figure}: "{allquote.quote}"</p>
+                        {allquote.reply ? <p>{allquote.interlocutor}: "{allquote.reply}"</p> : null}
                         <p className="allquotes-season">(Staffel: {allquote.seasonNumber}, Episode: {allquote.episodeNumber})</p>
                     </div>
                 ))}

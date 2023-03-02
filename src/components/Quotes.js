@@ -7,30 +7,6 @@ export default function Quotes() {
     const generateQuote = Math.floor(Math.random() * quotes.length);
     const randomQuote = quotes[generateQuote];
 
-    // let color = "#c0c0c0";
-    // if (randomQuote && randomQuote.figure === "Frasier") {
-    //   color = "#6A4F3C";
-    // } else if (randomQuote && randomQuote.figure === "Nils") {
-    //   color = "#8A705F";
-    // }
-
-
-
-    // return (
-    //     <div className="">
-    //         {randomQuote && (
-    //             <div style={{ color }}>
-    //                 <p>"{randomQuote.quote}"</p>
-    //                 <p>{`(${randomQuote.figure})`}</p>
-    //                 <p>"{randomQuote.reply}"</p>
-    //                 <p>{`(${randomQuote.interlocutor}, S:${randomQuote.seasonNumber}, E:${randomQuote.episodeNumber})`}</p>
-    //                 {/* <p>{`Season ${randomQuote.seasonNumber}, Episode ${randomQuote.episodeNumber}`}</p> */}
-    //             </div>
-    //         )}
-
-    //     </div>
-    // );
-
     let quoteColor = "#c0c0c0";
     let replyColor = "#c0c0c0";
     
