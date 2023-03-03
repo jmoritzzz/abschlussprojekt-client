@@ -1,21 +1,21 @@
 import { NavLink, useParams } from "react-router-dom";
 import useSeasons from "../services/useSeasons";
 import useEpisodes from "../services/useEpisodes";
-
+import fallbackImage from "../assets/fallback-image.png";
 
 export default function Season() {
 
     const allSeasons = useSeasons()
     const allEpisodes = useEpisodes();
 
-    console.log('all seasons',allSeasons);
+    console.log('all seasons', allSeasons);
     console.log('all episodes', allEpisodes);
 
     const { id } = useParams();
 
     //1. aktuelle Season 
-     const thisSeason = allSeasons.length && allSeasons.find(season => season.seasonNumber == id);
-     console.log('this season',thisSeason)
+    const thisSeason = allSeasons.length && allSeasons.find(season => season.seasonNumber == id);
+    console.log('this season', thisSeason)
 
     //array mit allen Episoden dieser Staffel
     //find() funktioniert hier nicht, weil es uns nur das erste Match ausgibt und wir ein Array returnen wollen
@@ -34,7 +34,10 @@ export default function Season() {
 
                                 return <div key={index} className="episode-card-item">
                                     <NavLink className="link" to={`/seasons/${season.seasonNumber}/episodes/${season.episodeNumber}`}>
-                                        <img className="episode-picture" src={season.episodeImage} />
+                                        <img className="episode-picture" src={season.episodeImage} onError={(e) => {
+                                            e.target.onerror = null;
+                                            e.target.src = fallbackImage;
+                                        }} />
                                     </NavLink>
                                     <div className="episode-card-number">{season.episodeNumber} - {season.name}</div>
                                     {/* <div className="episode-card-title"> {season.name}</div> */}
