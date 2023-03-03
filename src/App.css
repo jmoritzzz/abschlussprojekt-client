@@ -121,7 +121,7 @@ nav {
   margin: 0 auto;
   border: 5px solid #353535;
   height: 150px;
- }
+}
 
 .episode-picture:hover {
   border: 5px solid #c0c0c0;
@@ -135,7 +135,7 @@ nav {
 }
 
 .episode-card-title,
-.episode-card-number {  
+.episode-card-number {
   padding: 1% 0;
   font-size: 1rem;
 }
@@ -158,10 +158,10 @@ nav {
   font-size: calc(10px + 1vmin);
   text-transform: none;
   color: #c4b0a9;
-  
+
   width: 70vw;
   overflow-x: hidden;
- }
+}
 
 .Avatar {
   /* border: 1px solid #6a4c36; */
@@ -261,12 +261,12 @@ nav {
   /* justify-content: center; */
   width: 70vw;
   overflow-x: hidden;
-  
+
 }
 
 .titlecards-item {
   /* border: 5px solid rebeccapurple; */
- 
+
   /* padding: 1%; */
   margin: 2%;
 }
@@ -285,6 +285,102 @@ nav {
   overflow-x: hidden;
   margin: 1%;
 }
+
+
+.guestbook-container {
+  /* border: 3px solid gold; */
+  text-align: left;
+  width: 70vw;
+  overflow-x: hidden;
+  font-size: calc(10px + 1vmin);
+  text-transform: none;
+}
+
+.guestbook-headline {
+  text-align: center;
+  padding: 1% 0;
+  font-size: calc(20px + 1vmin);
+  text-transform: uppercase;
+}
+
+ul {
+  list-style: none
+}
+
+.guestbook-entry {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+ }
+
+.guestbook-name {
+  flex-basis: 15%;
+  word-wrap: break-word;
+  /* border: 3px solid blue; */
+  margin: 1%;
+  padding: 1%;
+}
+
+.guestbook-message {
+  flex-basis: 70%;
+  word-wrap: break-word;
+  padding: 1%;
+  margin: 1%;
+  /* border: 3px solid violet; */
+}
+
+.guestbook-form {
+  /* border: 3px solid orangered; */
+  text-align: center;
+  padding: 2%;
+  /* padding: 1%; */
+  /* display: flex;
+  flex-direction: column; */
+}
+
+
+.guestbook-form label {
+  margin-bottom: 10px;
+}
+
+.guestbook-form input {
+  /* border: 5px solid purple; */
+ 
+  margin: 0 2%;
+}
+
+.guestbook-form textarea {
+  /* border: 5px solid palegreen; */
+    margin: 0 2%;
+}
+
+.guestbook-form-submit {
+  /* background-color: #008CBA; */
+  /* color: white; */
+  border: 1px solid white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Della Respira', serif;
+  /* font-size: 16px; */
+  font-size: calc(10px + 1vmin);
+  margin: 2%;
+  cursor: pointer;
+}
+
+.guestbook-form-submit:hover {
+  background-color: black;
+  color: white;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -319,33 +415,3 @@ nav {
   justify-content: center;
   /* font-size: 1rem; */
 }
-
-
-
-/*  */
-
-/* .episode-card-item:hover  .episode-card-number {
-  opacity: 1.0;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
