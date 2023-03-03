@@ -8,6 +8,7 @@ import Season from './components/Season';
 import Episodes from './components/Episodes';
 import EpisodeCard from './components/EpisodeCard';
 import AllQuotes from './components/AllQuotes';
+import AllTitlecards from './components/Titlecards';
 
 
 
@@ -28,7 +29,7 @@ function App() {
         <NavLink className="navbar-link" to="/allquotes">
           Zitate
         </NavLink>
-        <NavLink className="navbar-link" to="/titelkarten">
+        <NavLink className="navbar-link" to="/titlecards">
           Titel-Karten
         </NavLink>
         <hr className="hr2" />
@@ -42,6 +43,7 @@ function App() {
           <Route path="/seasons/:id/episodes/:eid" element={<EpisodeCard />} />
           <Route path="/quotes" element={< Quotes />} />
           <Route path="/allquotes" element={< AllQuotes />} />
+          <Route path="/titlecards" element={< AllTitlecards />} />
         </Routes>
       </div>
 
