@@ -32,10 +32,10 @@ export default function Guestbook() {
 
     return (
         <div className="guestbook-container">
-            <div className="guestbook-headline">Ich bin ganz Ohr:</div>
+            <div className="guestbook-headline">"Ich bin ganz Ohr:"</div>
+            {/* <hr className="hr3" /> */}
 
-            {/* <h3>Einträge:</h3> */}
-            <div className="guestbook-container">
+            <div className="guestbook-display">
 
                 <ul>
                     {guestbook.map((entry) => (
@@ -49,6 +49,7 @@ export default function Guestbook() {
                             <div>
                                 {/* <p>{new Date(entry.date).toLocaleString()}</p> */}
                             </div>
+                                <hr className="hr3" />
                         </li>
                     ))}
                 </ul>

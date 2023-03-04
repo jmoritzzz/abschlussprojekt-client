@@ -21,6 +21,13 @@
   width: 70%;
 }
 
+.hr3 {
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(106, 76, 54), rgba(0, 0, 0, 0));
+  width: 70%;
+}
+
 .home-container {
   /* border: 5px solid gold; */
   width: 100%;
@@ -248,7 +255,7 @@ nav {
 
 .allquotes-season {
   /* border: 3px solid greenyellow; */
-  color: #74767e;
+  color: #6e5345;
 }
 
 
@@ -299,6 +306,7 @@ nav {
 .guestbook-headline {
   text-align: center;
   padding: 1% 0;
+  margin-top: 5%;
   font-size: calc(20px + 1vmin);
   text-transform: uppercase;
 }
@@ -319,6 +327,7 @@ ul {
   /* border: 3px solid blue; */
   margin: 1%;
   padding: 1%;
+  text-align: right;
 }
 
 .guestbook-message {
@@ -330,34 +339,38 @@ ul {
 }
 
 .guestbook-form {
-  /* border: 3px solid orangered; */
+  margin-top: 5%;
+  border: 2px solid #896443;
   text-align: center;
   padding: 2%;
-  /* padding: 1%; */
-  /* display: flex;
-  flex-direction: column; */
+    display: flex;
+  flex-direction: column;
 }
 
 
 .guestbook-form label {
   margin-bottom: 10px;
+  /* border: 5px solid orange; */
 }
 
 .guestbook-form input {
   /* border: 5px solid purple; */
- 
+  padding: 10px 8%;
   margin: 0 2%;
+  background-color: #c4b0a9;
 }
 
 .guestbook-form textarea {
   /* border: 5px solid palegreen; */
-    margin: 0 2%;
+  margin: 0 2%;
+  padding: 10px 5%;
+  background-color: #c4b0a9;
 }
 
 .guestbook-form-submit {
-  /* background-color: #008CBA; */
+  background-color: #c4b0a9 ;
   /* color: white; */
-  border: 1px solid white;
+  border: 1px solid #6a4c36;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -365,13 +378,13 @@ ul {
   font-family: 'Della Respira', serif;
   /* font-size: 16px; */
   font-size: calc(10px + 1vmin);
-  margin: 2%;
+  margin: 2% ;
   cursor: pointer;
 }
 
 .guestbook-form-submit:hover {
-  background-color: black;
-  color: white;
+  background-color: #6a4c36 ;
+  color: #c4b0a9;
 }
 
 
