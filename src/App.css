@@ -18,7 +18,7 @@
   border: 0;
   height: 2px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(255, 255, 255), rgba(0, 0, 0, 0));
-  width: 70%;
+  width: 90%;
 }
 
 .hr3 {
@@ -320,7 +320,7 @@ ul {
   flex-direction: row;
   flex-wrap: wrap;
  }
-
+ 
 .guestbook-name {
   flex-basis: 15%;
   word-wrap: break-word;
@@ -343,10 +343,17 @@ ul {
   border: 2px solid #896443;
   text-align: center;
   padding: 2%;
-    display: flex;
+  display: flex;
   flex-direction: column;
 }
 
+.guestbook-form-thanks {
+  margin-top: 5%;
+  /* border: 2px solid #896443; */
+  text-align: center;
+  padding: 2%;
+  text-transform: uppercase;
+}
 
 .guestbook-form label {
   margin-bottom: 10px;
