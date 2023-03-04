@@ -35,7 +35,7 @@ export default function AllQuotes() {
         allQuotes.map((allquote) => (
           <div key={allquote._id} className="allquotes-item">
             <p style={{ color: getColor(allquote.figure) }}>
-              {allquote.figure}: "{allquote.quote}"
+              {allquote.figure.toUpperCase()}: "{allquote.quote}"
             </p>
             {allquote.reply && (
               <p
@@ -44,7 +44,7 @@ export default function AllQuotes() {
                   fontStyle: "italic",
                 }}
               >
-                {allquote.interlocutor}: "{allquote.reply}"
+                {allquote.interlocutor.toUpperCase()}: "{allquote.reply}"
               </p>
             )}
             <p className="allquotes-season">
