@@ -4,6 +4,7 @@ import useGuestbook from "../services/useGuestbook";
 export default function Guestbook() {
     const [name, setName] = useState("");
     const [message, setMessage] = useState("");
+    const [submitted, setSubmitted] = useState(false);
 
     const guestbook = useGuestbook().sort((a, b) => new Date(b.date) - new Date(a.date));
 
@@ -25,6 +26,7 @@ export default function Guestbook() {
             });
             setName("");
             setMessage("");
+            setSubmitted(true); // Die Dankeschön-Nachricht wird angezeigt, wenn das Formular abgeschickt wurde.
         } catch (error) {
             console.error("Achtung, Fehler", error);
         }
@@ -33,10 +35,8 @@ export default function Guestbook() {
     return (
         <div className="guestbook-container">
             <div className="guestbook-headline">"Ich bin ganz Ohr:"</div>
-            {/* <hr className="hr3" /> */}
 
             <div className="guestbook-display">
-
                 <ul>
                     {guestbook.map((entry) => (
                         <li key={entry.id} className="guestbook-entry">
@@ -49,14 +49,18 @@ export default function Guestbook() {
                             <div>
                                 {/* <p>{new Date(entry.date).toLocaleString()}</p> */}
                             </div>
-                                <hr className="hr3" />
+                            <hr className="hr3" />
                         </li>
                     ))}
                 </ul>
-
             </div>
-            <div >
+                {submitted && (
+                    <div className="guestbook-form-thanks">
+                        Danke und alles Gute für Ihre mentale Gesundheit!
+                    </div>
+                )}
 
+            <div>
                 <form onSubmit={handleSubmit} className="guestbook-form">
                     <label className="guestbook-form-name">
                         Name:
@@ -69,7 +73,6 @@ export default function Guestbook() {
                     <button type="submit" className="guestbook-form-submit">Eintragen</button>
                 </form>
             </div>
-
         </div>
     );
 }

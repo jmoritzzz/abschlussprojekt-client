@@ -18,7 +18,7 @@
   border: 0;
   height: 2px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(255, 255, 255), rgba(0, 0, 0, 0));
-  width: 70%;
+  width: 90%;
 }
 
 .hr3 {
@@ -320,7 +320,7 @@ ul {
   flex-direction: row;
   flex-wrap: wrap;
  }
-
+ 
 .guestbook-name {
   flex-basis: 15%;
   word-wrap: break-word;
@@ -343,10 +343,17 @@ ul {
   border: 2px solid #896443;
   text-align: center;
   padding: 2%;
-    display: flex;
+  display: flex;
   flex-direction: column;
 }
 
+.guestbook-form-thanks {
+  margin-top: 5%;
+  /* border: 2px solid #896443; */
+  text-align: center;
+  padding: 2%;
+  text-transform: uppercase;
+}
 
 .guestbook-form label {
   margin-bottom: 10px;
@@ -385,46 +392,4 @@ ul {
 .guestbook-form-submit:hover {
   background-color: #6a4c36 ;
   color: #c4b0a9;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* /////////////////////////// */
-
-
-.Container {
-  border: 5px solid turquoise;
-  display: flex;
-  flex-wrap: wrap;
-  /* justify-content: center; */
-  color: #bebebe;
-  /* font-size: 1rem; */
-  font-weight: 100;
-  /* margin: 3%; */
-}
-
-
-
-
-
-.episode-card {
-  border: 5px solid orange;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 1%;
-  justify-content: center;
-  /* font-size: 1rem; */
 }
