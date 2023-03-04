@@ -9,6 +9,8 @@ import Episodes from './components/Episodes';
 import EpisodeCard from './components/EpisodeCard';
 import AllQuotes from './components/AllQuotes';
 import AllTitlecards from './components/Titlecards';
+// import Search from './components/Search';
+import Guestbook from './components/Guestbook';
 
 
 
@@ -23,27 +25,30 @@ function App() {
         <NavLink className="navbar-link" to="/seasons">
           Staffelübersicht
         </NavLink>
-        {/* <NavLink className="navbar-link" to="/nervosa">
-          Café Nervosa
-        </NavLink> */}
-        <NavLink className="navbar-link" to="/allquotes">
+             <NavLink className="navbar-link" to="/allquotes">
           Zitate
         </NavLink>
         <NavLink className="navbar-link" to="/titlecards">
           Titel-Karten
         </NavLink>
+           <NavLink className="navbar-link" to="/guestbook">
+          Café Nervosa
+        </NavLink>
         <hr className="hr2" />
+        {/* <div><Search/></div> */}
       </nav>
+
       <div className='display-content'>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/seasons" element={< Seasons />} />
-          <Route path="/seasons/:id" element={<Season/>} />
+          <Route path="/seasons/:id" element={<Season />} />
           <Route path="/seasons/:id/episodes" element={<Episodes />} />
           <Route path="/seasons/:id/episodes/:eid" element={<EpisodeCard />} />
           <Route path="/quotes" element={< Quotes />} />
           <Route path="/allquotes" element={< AllQuotes />} />
           <Route path="/titlecards" element={< AllTitlecards />} />
+          <Route path="/guestbook" element={< Guestbook />} />
         </Routes>
       </div>
 
