@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { NavLink, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from './home';
@@ -9,12 +9,20 @@ import Episodes from './components/Episodes';
 import EpisodeCard from './components/EpisodeCard';
 import AllQuotes from './components/AllQuotes';
 import AllTitlecards from './components/Titlecards';
-// import Search from './components/Search';
 import Guestbook from './components/Guestbook';
+// import { SearchBar } from './components/SearchBar';
+// import { SearchResultsList } from './components/SearchResultsList';
+import Search from './components/Search';
+// import { AiOutlineSearch } from 'react-icons/ai';
+import { FaSearch } from "react-icons/fa";
+
 
 
 
 function App() {
+
+  // const [results, setResults] = useState([]);
+
   return (
     <div className='App'>
 
@@ -25,17 +33,24 @@ function App() {
         <NavLink className="navbar-link" to="/seasons">
           Staffelübersicht
         </NavLink>
-             <NavLink className="navbar-link" to="/allquotes">
+        <NavLink className="navbar-link" to="/allquotes">
           Zitate
         </NavLink>
         <NavLink className="navbar-link" to="/titlecards">
           Titel-Karten
         </NavLink>
-           <NavLink className="navbar-link" to="/guestbook">
+        <NavLink className="navbar-link" to="/guestbook">
           Café Nervosa
+        </NavLink>
+        <NavLink className="navbar-link" to="/search">
+        <FaSearch id="search-icon" />
         </NavLink>
         <hr className="hr2" />
         {/* <div><Search/></div> */}
+        {/* <div className="search-bar-container">
+          <SearchBar setResults={setResults} />
+          {results && results.length > 0 && <SearchResultsList results={results} />}
+        </div> */}
       </nav>
 
       <div className='display-content'>
@@ -49,6 +64,7 @@ function App() {
           <Route path="/allquotes" element={< AllQuotes />} />
           <Route path="/titlecards" element={< AllTitlecards />} />
           <Route path="/guestbook" element={< Guestbook />} />
+          <Route path="/search" element={< Search />} />
         </Routes>
       </div>
 
