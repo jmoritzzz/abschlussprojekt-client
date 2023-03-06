@@ -265,6 +265,17 @@ nav {
   text-transform: none;
 }
 
+.allquotes-quote {
+  /* border: 3px solid greenyellow; */
+  color: #c4b0a9;
+}
+
+.allquotes-reply {
+  /* border: 3px solid greenyellow; */
+  color: #8b7266;
+  /* font-style: italic; */
+}
+
 .allquotes-season {
   /* border: 3px solid greenyellow; */
   color: #6e5345;
@@ -484,6 +495,4 @@ input:focus {
   /* border: 2px solid #6a4c36; */
   margin-top: 5%;
   width: 70vw;
-
-
 }
