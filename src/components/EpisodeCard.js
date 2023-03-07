@@ -21,20 +21,23 @@ export default function EpisodeCard() {
       <>
         <div className="single-episode-container">
           <div className="button-container">
-          
-            <button className="back-button-icon" onClick={() => navigate(-1)}><FaBackward/></button>
+
+            <button className="back-button-icon" onClick={() => navigate(-1)}><FaBackward /></button>
           </div>
           <div className="Episodecard-Container">
             <div className="title-wrapper">
               <div className="episode-title">
                 {thisEpisode && thisEpisode.seasonNumber}.{thisEpisode && thisEpisode.episodeNumber}. {thisEpisode && thisEpisode.name}
               </div>
-              <img className="Avatar" src={thisEpisode && thisEpisode.episodeImage}
-                onError={(e) => {
-                  e.target.onerror = null;
-                  e.target.src = fallbackImage;
-                }}
-                alt="Episode thumbnail" />
+              <div className="episode-image-wrapper">
+
+                <img className="Avatar" src={thisEpisode && thisEpisode.episodeImage}
+                  onError={(e) => {
+                    e.target.onerror = null;
+                    e.target.src = fallbackImage;
+                  }}
+                  alt="Episode thumbnail" />
+              </div>
             </div>
             <div className="ShortSummaryWrapper">
               <div className="ShortSummary-Header">Kurzbeschreibung</div>
@@ -62,7 +65,7 @@ export default function EpisodeCard() {
                 {thisEpisode && thisEpisode.scenes ? thisEpisode.scenes : 'Noch keine Daten verfügbar'}
               </div>
             </div>
-          <button className="back-button" onClick={() => navigate(-1)}>Zurück</button>
+            <button className="back-button" onClick={() => navigate(-1)}>Zurück</button>
           </div>
         </div>
       </>
