@@ -1,9 +1,12 @@
 import useEpisodes from "../services/useEpisodes";
-import { NavLink, useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import fallbackImage from "../assets/fallback-image.png";
+import { FaBackward } from "react-icons/fa";
 
 export default function EpisodeCard() {
   const allEpisodes = useEpisodes();
+
+  const navigate = useNavigate();
 
   const { id, eid } = useParams();
   console.log(eid);
@@ -16,7 +19,11 @@ export default function EpisodeCard() {
   if (thisEpisode) {
     return (
       <>
-        <div>
+        <div className="single-episode-container">
+          <div className="button-container">
+          
+            <button className="back-button-icon" onClick={() => navigate(-1)}><FaBackward/></button>
+          </div>
           <div className="Episodecard-Container">
             <div className="title-wrapper">
               <div className="episode-title">
@@ -43,18 +50,19 @@ export default function EpisodeCard() {
             </div>
 
             <div className="GuestCallerWrapper">
-              <div className="Caller-Header">Gastanrufer:</div>
+              <div className="Caller-Header">Gastanrufer</div>
               <div className="GuestCaller">
                 {thisEpisode && thisEpisode.callers ? thisEpisode.callers : 'Noch keine Daten verfügbar'}
               </div>
             </div>
 
             <div className="ScenesWrapper">
-              <div className="Scenes-Header">Besondere Szenen:</div>
+              <div className="Scenes-Header">Besondere Szenen</div>
               <div className="Scenes">
                 {thisEpisode && thisEpisode.scenes ? thisEpisode.scenes : 'Noch keine Daten verfügbar'}
               </div>
             </div>
+          <button className="back-button" onClick={() => navigate(-1)}>Zurück</button>
           </div>
         </div>
       </>

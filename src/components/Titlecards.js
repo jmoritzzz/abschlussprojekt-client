@@ -29,18 +29,34 @@ export default function AllTitlecards() {
                         {/* {alltitlecard.image.map((image) => (
                             <img key={image} className="titlecard-image" src={image} alt=""/>
                         ))} */}
+                        <div className="titlecard-image-container">
 
+                            {alltitlecard.image.map((image) => (
+                                <img
+                                    className="titlecard-image"
+                                    key={image}
+                                    src={image}
+                                    onError={(e) => {
+                                        e.target.onerror = null;
+                                        e.target.src = fallbackImage;
+                                    }}
+                                />
+                            ))}
+                        </div>
+                        {/* <div className="popup-titlecard-image-container">
+                            <span>&times;</span>
                         {alltitlecard.image.map((image) => (
-                            <img
-                                key={image}
-                                className="titlecard-image"
-                                src={image}
-                                onError={(e) => {
-                                    e.target.onerror = null;
-                                    e.target.src = fallbackImage;
-                                }}
-                            />
-                        ))}
+                                <img
+                                    className="popup-titlecard-image"
+                                    key={image}
+                                    src={image}
+                                    onError={(e) => {
+                                        e.target.onerror = null;
+                                        e.target.src = fallbackImage;
+                                    }}
+                                />
+                            ))}
+                        </div> */}
 
                     </div>
                 ))}

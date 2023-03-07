@@ -28,6 +28,65 @@
   width: 70%;
 }
 
+.button-container {
+  display: flex;
+  justify-content: left;
+  width: 100%;
+  /* border: 5px solid red; */
+}
+
+.back-button-icon {
+  /* border: 5px solid purple; */
+
+  /* background-color: #6a4c36; */
+  background-color: transparent;
+  /* border-radius: 15px; */
+  color: #6a4c36;
+  border: none;
+  /* border: 1px solid #6a4c36; */
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  font-family: 'Della Respira', serif;
+  font-size: calc(6px + 1vmin);
+  width: 5vw;
+  /* margin: 1% auto; */
+  /* padding: 1% 0; */
+  cursor: pointer;
+}
+
+/* .back-button-icon:hover {
+   border: 1px solid #c4b0a9;
+} */
+
+.back-button {
+  /* border: 5px solid purple; */
+
+  background-color: #27120b;
+  /* background-color: transparent; */
+  /* border-radius: 15px; */
+  color: #6a4c36;
+  /* border: none; */
+  border: 3px solid #6a4c36;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  font-family: 'Della Respira', serif;
+  font-size: calc(6px + 1vmin);
+  width: 10vw;
+  margin: 1% auto;
+  padding: 1% 0;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: #6a4c36;
+   color:#27120b;
+   /* border: 3px solid #27120b; */
+}
+
 .home-container {
   /* border: 5px solid gold; */
   width: 100%;
@@ -132,7 +191,7 @@ nav {
   border: 5px solid #c0c0c0;
 }
 
-/* EPISODEN */
+/* EPISODEN ÜBERSICHT */
 
 
 .episode-picture {
@@ -159,24 +218,31 @@ nav {
 }
 
 
+/* EPISODEN-KARTE */
+
+.single-episode-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 5px solid white; */
+}
+
 .Episodecard-Container {
   display: flex;
   flex-direction: column;
   background-color: #27120b;
   border: 1px solid #6a4c36;
-  border-radius: 15px;
-
-  margin: 2%;
+  border-radius: 15px;  
+  margin: 2% auto;
   text-align: left;
-  padding: 3%;
-
+  padding: 3%;  
   line-height: 1.5rem;
   font-size: calc(10px + 1vmin);
   text-transform: none;
-  color: #c4b0a9;
-
+  color: #c4b0a9;  
   width: 70vw;
   overflow-x: hidden;
+  /* border: 5px solid greenyellow; */
 }
 
 .Avatar {
@@ -281,6 +347,7 @@ nav {
   color: #6e5345;
 }
 
+
 /* TITELKARTEN */
 
 .titlecards-container {
@@ -306,15 +373,55 @@ nav {
   text-transform: uppercase;
   padding: 0.5%;
   color: #c4b0a9;
-
 }
+
+/* .titlecard-image-container {
+  border: 5px solid greenyellow;
+} */
 
 .titlecard-image {
   border: 3px solid #896443;
   width: 20vw;
   overflow-x: hidden;
   margin: 1%;
+  /* cursor: pointer; */
+  /* transition: .2s linear; */
+  /* border: 5px solid red; */
 }
+
+/* .titlecard-image:hover {
+  transform: scale(1.05);
+}
+
+.popup-titlecard-image-container {
+  position: fixed;
+  top:0; left:0;
+  background: rgba(0, 0, 0, .3);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+
+.popup-titlecard-image-container span {
+  position: absolute;
+  top:0; right:10px;
+  font-size: 40px;
+  font-weight: bolder;
+  color: #c4b0a9;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.popup-titlecard-image {
+  position: absolute;
+  top:50%; left:50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid #c4b0a9;
+  width: 720px;
+  object-fit: cover;
+} */
+
 
 /* GÄSTEBUCH */
 
@@ -407,14 +514,17 @@ ul {
 
 .guestbook-form-submit {
   background-color: #c4b0a9;
-  border: 1px solid #6a4c36;
+  border: 3px solid #6a4c36;
   cursor: pointer;
   padding: 1% 0;
+  width: 10vw;
+  border-radius: 15px;
 }
 
 .guestbook-form-submit:hover {
   background-color: #6a4c36;
   color: #c4b0a9;
+  border: 3px solid #c4b0a9;
 }
 
 /* SUCHE */
