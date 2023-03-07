@@ -409,43 +409,34 @@ nav {
   width: 20vw;
   overflow-x: hidden;
   margin: 1%;
-  /* cursor: pointer; */
-  /* transition: .2s linear; */
+  cursor: pointer;
+  transition: .2s linear;
   /* border: 5px solid red; */
 }
 
-/* .titlecard-image:hover {
+ .titlecard-image:hover {
   transform: scale(1.05);
 }
 
-.popup-titlecard-image-container {
+
+.fullscreen-titlecard-image {
   position: fixed;
-  top:0; left:0;
-  background: rgba(0, 0, 0, .3);
-  height: 100%;
+  top: 0;
+  left: 0;
   width: 100%;
-  z-index: 100;
-  display: none;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.popup-titlecard-image-container span {
-  position: absolute;
-  top:0; right:10px;
-  font-size: 40px;
-  font-weight: bolder;
-  color: #c4b0a9;
-  cursor: pointer;
-  z-index: 100;
+.fullscreen-titlecard-image img {
+  max-width: 95%;
+  max-height: 95%;
+  border: 5px solid #896443;
 }
 
-.popup-titlecard-image {
-  position: absolute;
-  top:50%; left:50%;
-  transform: translate(-50%, -50%);
-  border: 5px solid #c4b0a9;
-  width: 720px;
-  object-fit: cover;
-} */
 
 
 /* GÄSTEBUCH */
