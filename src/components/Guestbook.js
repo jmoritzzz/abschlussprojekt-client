@@ -26,7 +26,7 @@ export default function Guestbook() {
             });
             setName("");
             setMessage("");
-            setSubmitted(true); // Die Dankeschön-Nachricht wird angezeigt, wenn das Formular abgeschickt wurde.
+            setSubmitted(true); 
         } catch (error) {
             console.error("Achtung, Fehler", error);
         }
@@ -64,11 +64,11 @@ export default function Guestbook() {
                 <form onSubmit={handleSubmit} className="guestbook-form">
                     <label className="guestbook-form-name">
                         
-                        <input type="text" value="Name" onChange={(e) => setName(e.target.value)} />
+                        <input type="text" value="Bitte gebe deinen Namen ein" onChange={(e) => setName(e.target.value)} />
                     </label>
                     <label className="guestbook-form-message">
                         
-                        <textarea value="Nachricht" onChange={(e) => setMessage(e.target.value)} />
+                        <textarea value="Bitte gebe deine Nachricht ein" onChange={(e) => setMessage(e.target.value)} />
                     </label>
                     <button type="submit" className="guestbook-form-submit">Übermitteln</button>
                 </form>
