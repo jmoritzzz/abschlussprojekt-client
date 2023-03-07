@@ -506,6 +506,7 @@ ul {
   display: inline-block;
   font-family: 'Della Respira', serif;
   font-size: calc(6px + 1vmin);
+  letter-spacing: 1.2px;
   width: 50vw;
   margin: 1% auto;
   padding: 1% 0;
@@ -557,9 +558,10 @@ ul {
   margin-left: 2%;
   font-family: 'Della Respira', serif;
   font-size: calc(10px + 1vmin);
+  letter-spacing: 2px;
   text-transform: uppercase;
   text-align: center;
-  min-width: 300px;
+  min-width: 400px;
   /* height: 1.5rem; */
   /* text-decoration: none; */
   /* display: inline-block; */
@@ -605,4 +607,13 @@ input:focus {
   /* border: 2px solid #6a4c36; */
   margin-top: 5%;
   width: 70vw;
+}
+
+.search-result-foundIn {
+  color: #6a4c36;
+  font-size: calc(6px + 1vmin);
+}
+
+.search-result-field {
+  font-size: calc(6px + 1vmin);
 }

@@ -4,6 +4,10 @@ import { FaSearch } from "react-icons/fa";
 export const SearchBar = ({ setResults }) => {
     const [input, setInput] = useState("");
     const [selectedField, setSelectedField] = useState("name");
+    const [searchField, setSearchField] = useState(null);
+
+
+    /* ALTE SUCHE NACH KATEGORIEN UNTERTEILT */
 
     // const fetchData = (value) => {
     //     fetch("https://abschlussprojekt-server.onrender.com/episodes")
@@ -24,25 +28,30 @@ export const SearchBar = ({ setResults }) => {
     /* NEUE SUCHE OHNE KATEGORIENFILTER*/
 
     const fetchData = (value) => {
+        const fields = ["name", "summary", "actors", "callers", "scenes"];
         fetch("https://abschlussprojekt-server.onrender.com/episodes")
             .then((response) => response.json())
             .then((json) => {
                 const results = json.filter((episode) => {
-                    return (
-                        value &&
-                        Object.values(episode).some((fieldValue) => {
-                            return (
-                                fieldValue &&
-                                typeof fieldValue === "string" &&
-                                fieldValue.toLowerCase().includes(value)
-                            );
-                        })
-                    );
+                    for (let i = 0; i < fields.length; i++) {
+                        const field = fields[i];
+                        if (episode && episode[field] && episode[field].toLowerCase().includes(value)) {
+                            setSearchField(field);
+                            return true;
+                        }
+                    }
+                    return false;
+                }).map((episode) => {
+                    return {
+                        ...episode,
+                        searchField: searchField // use the searchField variable to add the found field to the result object
+                    };
                 });
                 setResults(results);
             });
     };
-
+      
+      
 
     const handleChange = (value) => {
         setInput(value);
