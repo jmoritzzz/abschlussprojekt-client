@@ -2,11 +2,14 @@ import useEpisodes from "../services/useEpisodes";
 import { useParams, useNavigate } from "react-router-dom";
 import fallbackImage from "../assets/fallback-image.png";
 import { FaBackward } from "react-icons/fa";
+import { useState } from "react";
 
 export default function EpisodeCard() {
   const allEpisodes = useEpisodes();
 
   const navigate = useNavigate();
+
+  const [fullImage, setFullImage] = useState(null);
 
   const { id, eid } = useParams();
   console.log(eid);
@@ -29,14 +32,19 @@ export default function EpisodeCard() {
               <div className="episode-title">
                 {thisEpisode && thisEpisode.seasonNumber}.{thisEpisode && thisEpisode.episodeNumber}. {thisEpisode && thisEpisode.name}
               </div>
-              <div className="episode-image-wrapper">
-
-                <img className="Avatar" src={thisEpisode && thisEpisode.episodeImage}
-                  onError={(e) => {
-                    e.target.onerror = null;
-                    e.target.src = fallbackImage;
-                  }}
-                  alt="Episode thumbnail" />
+              <div className="episode-image-container">
+                <div className="episode-image-wrapper">
+                  <img
+                    className="Avatar"
+                    src={thisEpisode && thisEpisode.episodeImage}
+                    onError={(e) => {
+                      e.target.onerror = null;
+                      e.target.src = fallbackImage;
+                    }}
+                    alt="Episode thumbnail"
+                    onClick={() => setFullImage(thisEpisode.episodeImage)}
+                  />
+                </div>
               </div>
             </div>
             <div className="ShortSummaryWrapper">
@@ -68,6 +76,14 @@ export default function EpisodeCard() {
             <button className="back-button" onClick={() => navigate(-1)}>Zurück</button>
           </div>
         </div>
+        <div>
+          {fullImage && (
+            <div className="fullscreen-episode-image">
+              <img src={fullImage} onClick={() => setFullImage(null)} />
+            </div>
+          )}
+        </div>
+
       </>
     );
   }
