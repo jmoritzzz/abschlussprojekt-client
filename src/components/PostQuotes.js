@@ -82,3 +82,4 @@ export default function PostQuotes() {
             <button className="postquote-button" type="submit">Übermitteln</button>
         </form>
     );
+}
