@@ -1,5 +1,6 @@
 import React from "react";
 import useQuotes from "../services/useQuotes";
+import PostQuotes from "./PostQuotes";
 
 export default function AllQuotes() {
   const allQuotes = useQuotes();
@@ -31,6 +32,7 @@ export default function AllQuotes() {
 
   return (
     <div className="allquotes-container">
+      
       {allQuotes.length &&
         allQuotes.map((allquote) => (
           <div key={allquote._id} className="allquotes-item">
@@ -53,6 +55,10 @@ export default function AllQuotes() {
             </p>
           </div>
         ))}
+        <div className="postquote-container">
+                  <PostQuotes />
+
+        </div>
     </div>
   );
 }
