@@ -55,6 +55,7 @@ export default function AllQuotes() {
             </p>
           </div>
         ))}
+        
         <div className="postquote-container">
                   <PostQuotes />
 
