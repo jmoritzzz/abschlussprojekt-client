@@ -61,17 +61,16 @@ export default function Guestbook() {
                 )}
 
             <div>
-                <form onSubmit={handleSubmit} className="guestbook-form">
-                    <label className="guestbook-form-name">
-                        
-                        <input type="text" value="Bitte gebe deinen Namen ein" onChange={(e) => setName(e.target.value)} />
-                    </label>
-                    <label className="guestbook-form-message">
-                        
-                        <textarea value="Bitte gebe deine Nachricht ein" onChange={(e) => setMessage(e.target.value)} />
-                    </label>
-                    <button type="submit" className="guestbook-form-submit">Übermitteln</button>
-                </form>
+            <form onSubmit={handleSubmit} className="guestbook-form">
+    <label className="guestbook-form-name">
+        <input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Bitte gebe deinen Namen ein" />
+    </label>
+    <label className="guestbook-form-message">
+        <textarea value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Bitte gebe deine Nachricht ein" />
+    </label>
+    <button type="submit" className="guestbook-form-submit">Übermitteln</button>
+</form>
+
             </div>
         </div>
     );
