@@ -75,7 +75,7 @@ export default function PostQuotes() {
           onChange={handleInputChange}
         />
       </label>
-      <button className="postquote-button" type="submit">Add Quote</button>
+      <button className="postquote-button" type="submit">Zitat hinzufügen</button>
     </form>
   );
 }
