@@ -25,7 +25,8 @@ export default function EpisodeCard() {
         <div className="single-episode-container">
           <div className="button-container">
 
-            <button className="back-button-icon" onClick={() => navigate(-1)}><FaBackward /></button>
+            {/* <button className="back-button-icon" onClick={() => navigate(-1)}><FaBackward /></button> */}
+            <button className="back-button-icon" onClick={() => navigate(-1)}>&#8617;</button>
           </div>
           <div className="Episodecard-Container">
             <div className="title-wrapper">
