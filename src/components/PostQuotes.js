@@ -40,7 +40,7 @@ export default function PostQuotes() {
     return (
         <form className="postquotes-form" onSubmit={handleSubmit}>
             <label>
-                <span className="postquote-name">Zitat:</span> 
+                <span className="postquote-name">Zitat:</span>
                 <input className="postquotes-field"
                     type="text"
                     name="quote"
@@ -50,7 +50,7 @@ export default function PostQuotes() {
                 />
             </label>
             <label>
-            <span className="postquote-name"> Charakter:</span> 
+                <span className="postquote-name"> Charakter:</span>
                 <input className="postquotes-field"
                     type="text"
                     name="figure"
@@ -60,7 +60,7 @@ export default function PostQuotes() {
                 />
             </label>
             <label>
-            <span className="postquote-name">Staffel-Nummer:</span> 
+                <span className="postquote-name">Staffel-Nummer:</span>
                 <input className="postquotes-field-number"
                     type="number"
                     name="seasonNumber"
@@ -70,7 +70,7 @@ export default function PostQuotes() {
                 />
             </label>
             <label>
-            <span className="postquote-name">Episoden-Nummer:</span> 
+                <span className="postquote-name">Episoden-Nummer:</span>
                 <input className="postquotes-field-number"
                     type="number"
                     name="episodeNumber"
@@ -82,3 +82,4 @@ export default function PostQuotes() {
             <button className="postquote-button" type="submit">Übermitteln</button>
         </form>
     );
+}
