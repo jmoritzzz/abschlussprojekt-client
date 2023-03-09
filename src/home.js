@@ -17,7 +17,7 @@ export default function Home() {
                     </NavLink> */}
 
                     <NavLink className="image-link" to="/Seasons">
-                        <div className="title-wrapper">
+                        <div className="title-wrapper-home">
 
                             {hover ? (
                                 <video autoPlay src={video} onEnded={() => setHover(false)} />
