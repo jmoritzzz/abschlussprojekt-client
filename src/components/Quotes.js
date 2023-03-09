@@ -44,7 +44,7 @@ export default function Quotes() {
           </div>
           {randomQuote.interlocutor && (
             // <div style={{ color: replyColor }}>
-            <div>
+            <div style={{fontStyle: "italic"}}>
               {randomQuote.interlocutor}: "{randomQuote.reply}"
             </div>
           )}
