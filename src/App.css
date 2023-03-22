@@ -2,7 +2,7 @@
   /* border: 5px solid red; */
   background-color: black;
   min-height: 100vh;
-  display: flex;
+    display: flex;
   flex-direction: column;
   align-items: center;
   font-size: calc(10px + 1vmin);
@@ -13,6 +13,59 @@
   text-align: center;
   padding-top: 1%;
 }
+
+.welcome-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.75); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  color: #c0c0c0;
+}
+
+.welcome-overlay-content {
+  /* background-color: white; */
+  background-color: rgba(0, 0, 0, 0.95);
+  padding: 20px;
+  border: 2px solid #c0c0c0;
+  border-radius: 5px;
+  width: 70%;
+  text-transform: none;
+}
+
+.welcome-overlay-headline {
+ padding: 1% 0; 
+  text-transform: uppercase;
+}
+
+.welcome-overlay-text {
+  padding: 1%0;
+  /* text-align: left; */
+ }
+
+.welcome-overlay-button{
+  background-color: #c0c0c0;
+  border: 3px solid #353535;
+  cursor: pointer;
+  padding: 1% 0;
+  width: 10vw;
+  margin: 2% auto;
+  font-family: 'Della Respira', serif;
+  font-size: calc(6px + 1vmin);
+  text-transform: uppercase;
+}
+
+.welcome-overlay-button:hover {
+  background-color: #6a4c36;
+  color: #c4b0a9;
+  border: 3px solid #c4b0a9;
+}
+
 
 .hr2 {
   border: 0;
@@ -345,11 +398,12 @@ nav {
 .allquotes-container {
   /* border: 3px solid lightcoral; */
   margin: 0 auto;
-  text-align: left;
+  text-align: center;
   width: 70vw;
   overflow-x: hidden;
   font-size: calc(10px + 1vmin);
   /* line-height: 1.5; */
+
 }
 
 
@@ -361,6 +415,7 @@ nav {
   padding: 0 1%;
   color: #c0c0c0;
   text-transform: none;
+  text-align: left;
 }
 
 .allquotes-quote {
