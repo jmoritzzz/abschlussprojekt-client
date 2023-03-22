@@ -15,6 +15,7 @@ import Guestbook from './components/Guestbook';
 import Search from './components/Search';
 // import { AiOutlineSearch } from 'react-icons/ai';
 import { FaSearch } from "react-icons/fa";
+import WelcomeOverlay from './components/WelcomeOVerlay';
 
 
 
@@ -25,7 +26,7 @@ function App() {
 
   return (
     <div className='App'>
-
+    
       <nav>
         <NavLink className="navbar-link" to="/">
           Start
@@ -43,7 +44,7 @@ function App() {
           Café Nervosa
         </NavLink>
         <NavLink className="navbar-link" to="/search">
-        <FaSearch id="search-icon" />
+          <FaSearch id="search-icon" />
         </NavLink>
         <hr className="hr2" />
         {/* <div><Search/></div> */}
@@ -54,6 +55,7 @@ function App() {
       </nav>
 
       <div className='display-content'>
+      <WelcomeOverlay />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/seasons" element={< Seasons />} />
