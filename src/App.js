@@ -15,7 +15,7 @@ import Guestbook from './components/Guestbook';
 import Search from './components/Search';
 // import { AiOutlineSearch } from 'react-icons/ai';
 import { FaSearch } from "react-icons/fa";
-import WelcomeOverlay from './components/WelcomeOVerlay';
+import WelcomeOverlay from './components/WelcomeOverlay';
 
 
 
