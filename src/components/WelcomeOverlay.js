@@ -24,7 +24,7 @@ function WelcomeOverlay() {
                         Es gibt in der Synchronisation einige Besonderheiten, die ich berücksichtigen möchte. </p>
                     <p>Die Umsetzung erfolgte mit HTML, CSS, React, MongoDB und Firebase, das Deploying bei Render. <br/> 
                     Leider sind die Ladezeiten etwas länger, was auch ein Grund ist, warum ich diesen Begrüßungstext verfasst habe. <br />
-                        Die Seite ist kein abgeschlossenes Projekt. Es gibt noch einige Dinge, die ich umsetzen möchte. <br/>
+                        Die Seite ist kein abgeschlossenes Projekt. Es gibt noch einige Dinge, die ich umsetzen möchte. Das Design ist responsive, dennoch, der Thematik gezollt, nicht für die Betrachtung auf einem Smartphone ausgelegt. <br/>
                         Das verwendete urheberrechtlich geschütze Material dient zur Veranschaulichung im Rahmen des Unterrichts. </p>
                     <p>Inzwischen sollte die Verbindung zur Datenbank stehen und ich wünsche viel Spaß!</p>
                 </div>
